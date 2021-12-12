@@ -73,6 +73,7 @@ body {
   padding: 0 2.4rem 0 2.5rem;
 }
 
+/* ====== Card Base ====== */
 .user-card {
   width: 100%;
   max-width: 35rem;
@@ -81,6 +82,14 @@ body {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  gap: 2.4rem;
+  /* ====== Card Header ====== */
+  /*  header */
+  /* ====== Card - Primary Info ====== */
+  /*  primary-info */
+  /* ====== Card - Social Media Info ====== */
 }
 
 .user-card__header {
@@ -89,4 +98,41 @@ body {
   grid-template-columns: 1fr;
   justify-items: center;
 }
+
+.user-card__header--bg-img-container {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  width: 100%;
+  height: 100%;
+}
+
+.user-card__header--bg-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-card__header--profile-img {
+  grid-row: 2/4;
+  grid-column: 1/2;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.5rem solid #fff;
+}
+
+.user-card__primary-info {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--gray-blue);
+}
+
+.user-card__primary-info--user-name {
+  font-weight: 700;
+}
+
+.user-card__primary-info--user-age {
+  font-weight: 500;
+}
+
+/*  user-card */
 /*# sourceMappingURL=main.css.map */
