@@ -26,6 +26,10 @@ body {
   background: var(--primary);
   padding: 0 2.4rem 0 2.5rem;
   // overflow: hidden;
+  background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+  // background-position: top 0vw left 0vw, bottom 0vw right 0vw;
+  background-position: bottom 45vh right 45vw, top 45vh left 45vw;
+  background-repeat: no-repeat;
 }
 
  
@@ -89,18 +93,58 @@ body {
 
     &--user-name {
       font-weight: 700;
+      margin-bottom: 0.8rem;
+      color: var(--dark-blue);
     }
 
     &--user-age {
       font-weight: 500;
+      font-size: 1.4rem;
+      color: var(--gray-blue);
+    }
+
+    &--user-location {
+      font-size: 1.4rem;
+      color: var(--gray-blue);
     }
   } /*  primary-info */
 
 /* ====== Card - Social Media Info ====== */
 
   &__social-info-stats {
+    width: 100%;
+    border-top: 1px solid #e8e9ec;
+    padding: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  }
+    &--inner-container{
+      // flex: 1 1 20rem;
+      // max-width: 24.9rem;
+      flex-grow: 1;
+      flex-shrink: 1;
+      // width: clamp(23.4rem, 20.9rem + 6.6667vw, 24.9rem);
+      display: flex;
+      justify-content: space-between;
+
+      .stat {
+
+        .stat-value {
+          font-weight: 700;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+          margin-bottom: 0.9rem;
+        }
+
+         .stat-category {
+          font-size: 1rem;
+          letter-spacing: 0.15rem;
+          color: var(--gray-blue);
+        }
+      } /*  stat */
+    }
+  } /*  social-info-stats */
 } /*  user-card */
 
  

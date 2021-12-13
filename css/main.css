@@ -71,6 +71,9 @@ body {
   place-items: center;
   background: var(--primary);
   padding: 0 2.4rem 0 2.5rem;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-position: bottom 45vh right 45vw, top 45vh left 45vw;
+  background-repeat: no-repeat;
 }
 
 /* ====== Card Base ====== */
@@ -90,6 +93,7 @@ body {
   /* ====== Card - Primary Info ====== */
   /*  primary-info */
   /* ====== Card - Social Media Info ====== */
+  /*  social-info-stats */
 }
 
 .user-card__header {
@@ -128,10 +132,49 @@ body {
 
 .user-card__primary-info--user-name {
   font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: var(--dark-blue);
 }
 
 .user-card__primary-info--user-age {
   font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--gray-blue);
+}
+
+.user-card__primary-info--user-location {
+  font-size: 1.4rem;
+  color: var(--gray-blue);
+}
+
+.user-card__social-info-stats {
+  width: 100%;
+  border-top: 1px solid #e8e9ec;
+  padding: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-card__social-info-stats--inner-container {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  justify-content: space-between;
+  /*  stat */
+}
+
+.user-card__social-info-stats--inner-container .stat .stat-value {
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 0.9rem;
+}
+
+.user-card__social-info-stats--inner-container .stat .stat-category {
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  color: var(--gray-blue);
 }
 
 /*  user-card */
